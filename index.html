@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>wheremymoney</title>
+    <link rel="stylesheet" href="stylesheet.css">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://icons8.com/icon/ckrjM2xjKegD/cash">
+    <link rel="icon" type="image/x-icon" href="https://icons8.com/icon/ckrjM2xjKegD/cash">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LRKSFBS8RG"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'G-LRKSFBS8RG');
+	</script>
+  </head>
+
+  <body>
+    <h1>Expense Tracker</h1>
+    <div class="container">
+        <div class="total-budget-container">
+            <h3>Budget</h3>
+            <input type="number" id="total-budget" placeholder="Enter Total Amount">
+            <button class="submit" id="total-budget-button">Set Budget</button>
+        </div>
+
+        <div class="expenses-container">
+            <h3>Expenses</h3>
+            <input type="text" id="expense-item" placeholder="Enter Name of Item"><br />
+            <input type="number" id="expense-amount" placeholder="Enter Price of Item">
+            <button class="submit" id="expense-button">Add</button>
+        </div>
+    </div>
+
+    <div class="output-container">
+      <div>
+        <p>Total Budget</p>
+        <span id="total-budget-output">0</span>
+      </div>
+      <div>
+        <p>Expenses</p>
+        <span id="total-expenses-output">0</span>
+      </div>
+      <div>
+        <p>Balance</p>
+        <span id="balance-output">0</span>
+      </div>
+    </div>
+
+    <div class="expenses-table">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Expense</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+              <th scope="row">Remaining Balance</th>
+              <td></td>
+            </tr>
+        </tfoot>
+      </table>
+    </div>
+	<footer>
+      <p>Disclaimer: This website is created for learning purposes only. The information provided here should not be considered professional advice. Please note that we make no guarantees regarding the accuracy, completeness, or reliability of the contents of this website. Any actions you take based on the contents of this website are at your own risk. We are not liable for any losses or damages incurred from the use of this website.</p>
+    </footer>
+	  <script src="script.js"></script>
+  </body>
+</html>
