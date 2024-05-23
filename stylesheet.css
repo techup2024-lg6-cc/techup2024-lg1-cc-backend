@@ -1,0 +1,100 @@
+body {
+    background-color: darkgrey;
+}
+
+h1, h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.container input {
+    display: block;
+    width: 100%;
+    padding: 0.7rem 0.3em;
+    border: 1px solid gray;
+    border-radius: 0.5em;
+}
+
+.submit {
+    padding: 0.7em;
+    border-radius: 0.5em;
+    margin-top: 0.5em;
+    font-weight: bold;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 1.2em;
+}
+
+#expense-button {
+    width: 5em;
+}
+
+.total-budget-container, .expenses-container {
+    background-color: aliceblue;
+    padding: 1.5em 1.9em;
+    border: 0.5px solid;
+    border-radius: 0.3em;
+    box-shadow: 0 0.6em 1.2em rgb(20, 0, 8, 0.1);
+}
+
+.output-container {
+    font-family: "Shadows Into Light", cursive;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    margin: 2em;
+    border: 1px solid;
+    border-radius: 0.3em;
+    background-color: #AEC6CF;
+    padding: 0.5em;
+    width: ;
+}
+
+.output-container p, span {
+    display: block;
+    font-weight: bolder;
+    font-size: larger;
+    text-align: center;
+    color: black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    align-self: center;
+    margin-top: 2em;
+}
+  
+th, td {
+    border: 1px solid whitesmoke;
+    padding: 8px;
+    text-align: left;
+    font-family: "Shadows Into Light", cursive;
+    font-size: x-large;
+}
+  
+th {
+    background-color: lightseagreen;
+    color: white;
+}
+  
+tfoot td {
+    font-weight: bold;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+footer p {
+    font-size: small;
+    font-family: "Shadows Into Light", cursive;
+}
